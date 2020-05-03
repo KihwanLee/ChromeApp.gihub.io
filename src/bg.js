@@ -1,10 +1,6 @@
 const body = document.querySelector('body');
 
-const IMG_NUM = 3;
-
-function onImageLoaded() {
-    console.log("image loaded");
-}
+const IMG_NUM = 4;
 
 function paintImage(imageNumber) {
     const image = new Image();
@@ -14,7 +10,7 @@ function paintImage(imageNumber) {
 }
 
 function generateRand() {
-    const num = Math.floor(Math.random() *  7);
+    const num = Math.floor(Math.random() *  IMG_NUM);
     return num;
 }
 
